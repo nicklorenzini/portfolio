@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // nodejs library to set properties for components
@@ -15,6 +16,7 @@ import Drawer from "@material-ui/core/Drawer";
 import Menu from "@material-ui/icons/Menu";
 // core components
 import headerStyle from "assets/jss/material-kit-react/components/headerStyle.jsx";
+import logo from '../../assets/img/logowhite.png';
 
 class Header extends React.Component {
   constructor(props) {
@@ -73,7 +75,7 @@ class Header extends React.Component {
       [classes.absolute]: absolute,
       [classes.fixed]: fixed
     });
-    const brandComponent = <Button className={classes.title}>{brand}</Button>;
+    const brandComponent = <img src={logo} />;
     return (
       <AppBar className={appBarClasses}>
         <Toolbar className={classes.container}>
@@ -84,7 +86,7 @@ class Header extends React.Component {
                 {leftLinks}
               </Hidden>
             ) : (
-              brandComponent
+              <Link href='/'>{brandComponent}</Link>
             )}
           </div>
           <Hidden smDown implementation="css">
@@ -122,7 +124,7 @@ class Header extends React.Component {
 }
 
 Header.defaultProp = {
-  color: "white"
+  color: "dark"
 };
 
 Header.propTypes = {
@@ -140,7 +142,7 @@ Header.propTypes = {
   ]),
   rightLinks: PropTypes.node,
   leftLinks: PropTypes.node,
-  brand: PropTypes.string,
+  brand: PropTypes.node,
   fixed: PropTypes.bool,
   absolute: PropTypes.bool,
   // this will cause the sidebar to change the color from

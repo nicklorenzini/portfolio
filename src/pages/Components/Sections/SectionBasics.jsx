@@ -23,6 +23,7 @@ import CustomInput from "components/CustomInput/CustomInput.jsx";
 import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.jsx";
 import Paginations from "components/Pagination/Pagination.jsx";
 import Badge from "components/Badge/Badge.jsx";
+import SectionCard from './SectionCard';
 
 import basicsStyle from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.jsx";
 
@@ -88,6 +89,14 @@ class SectionBasics extends React.Component {
                 <small>Pick your style</small>
               </h3>
             </div>
+            <GridContainer justify="center">
+              <GridItem xs={3} sm={3}>
+                <SectionCard />
+              </GridItem>
+              <GridItem xs={3} sm={3}>
+                <SectionCard />
+              </GridItem>
+            </GridContainer>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={8}>
                 <Button color="primary">Default</Button>

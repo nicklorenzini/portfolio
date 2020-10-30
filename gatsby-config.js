@@ -1,7 +1,7 @@
 module.exports = {
   pathPrefix: `/mini-gatsbyv2-material-kit-react`,
   siteMetadata: {
-    title: 'Gatsby Default Starter',
+    title: 'Nick Lorenzini - Oregon City-native Web Developer and Technology Pioneer',
   },
   plugins: [
     'gatsby-plugin-resolve-src',

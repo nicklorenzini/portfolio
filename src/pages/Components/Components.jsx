@@ -27,7 +27,7 @@ import SectionCompletedExamples from "./Sections/SectionCompletedExamples.jsx";
 import SectionLogin from "./Sections/SectionLogin.jsx";
 import SectionExamples from "./Sections/SectionExamples.jsx";
 import SectionDownload from "./Sections/SectionDownload.jsx";
-
+import TypeText from "../../components/TypeText";
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
 
 class Components extends React.Component {
@@ -36,13 +36,12 @@ class Components extends React.Component {
     return (
       <div>
         <Header
-          brand="Material Kit React"
           rightLinks={<HeaderLinks />}
           fixed
           color="transparent"
-          changeColorOnScroll={{
+          changeColorOnScroll={{  
             height: 400,
-            color: "white"
+            color: "dark"
           }}
           {...rest}
         />
@@ -51,10 +50,11 @@ class Components extends React.Component {
             <GridContainer>
               <GridItem>
                 <div className={classes.brand}>
-                  <h1 className={classes.title}>Material Kit React.</h1>
+                  <h1 className={classes.title}>Hi, my name is Nick.</h1>
                   <h3 className={classes.subtitle}>
-                    A Badass Material-UI Kit based on Material Design.
+                    I wear a lot of hats:
                   </h3>
+                  <TypeText />
                 </div>
               </GridItem>
             </GridContainer>
