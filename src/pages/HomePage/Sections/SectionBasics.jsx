@@ -23,7 +23,8 @@ import CustomInput from "components/CustomInput/CustomInput.jsx";
 import CustomLinearProgress from "components/CustomLinearProgress/CustomLinearProgress.jsx";
 import Paginations from "components/Pagination/Pagination.jsx";
 import Badge from "components/Badge/Badge.jsx";
-import SectionCard from './SectionCard';
+import Trio from './SectionTrio'
+import ContactCard from 'components/ContactCard/index.tsx'
 
 import basicsStyle from "assets/jss/material-kit-react/views/componentsSections/basicsStyle.jsx";
 
@@ -78,42 +79,18 @@ class SectionBasics extends React.Component {
     return (
       <div className={classes.sections}>
         <div className={classes.container}>
+        <Trio />
           <div className={classes.title}>
-            <h2>Basic Elements</h2>
+            <h2>How do you want to make a difference?</h2>
           </div>
-          <div id="buttons">
+          <div>
             <div className={classes.title}>
               <h3>
-                Buttons
+                What 
                 <br />
                 <small>Pick your style</small>
               </h3>
             </div>
-            <GridContainer justify="center">
-              <GridItem xs={3} sm={3}>
-                <SectionCard />
-              </GridItem>
-              <GridItem xs={3} sm={3}>
-                <SectionCard />
-              </GridItem>
-            </GridContainer>
-            <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={8}>
-                <Button color="primary">Default</Button>
-                <Button color="primary" round>
-                  round
-                </Button>
-                <Button color="primary" round>
-                  <Favorite className={classes.icons} /> with icon
-                </Button>
-                <Button justIcon round color="primary">
-                  <Favorite className={classes.icons} />
-                </Button>
-                <Button color="primary" simple>
-                  simple
-                </Button>
-              </GridItem>
-            </GridContainer>
             <div className={classes.title}>
               <h3>
                 <small>Pick your size</small>
@@ -134,6 +111,7 @@ class SectionBasics extends React.Component {
               <h3>
                 <small>Pick your color</small>
               </h3>
+              <ContactCard/>
             </div>
             <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={8}>

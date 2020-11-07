@@ -27,10 +27,10 @@ import SectionCompletedExamples from "./Sections/SectionCompletedExamples.jsx";
 import SectionLogin from "./Sections/SectionLogin.jsx";
 import SectionExamples from "./Sections/SectionExamples.jsx";
 import SectionDownload from "./Sections/SectionDownload.jsx";
-import TypeText from "../../components/TypeText";
+import TypeText from "components/TypeText";
 import componentsStyle from "assets/jss/material-kit-react/views/components.jsx";
 
-class Components extends React.Component {
+class HomePage extends React.Component {
   render() {
     const { classes, ...rest } = this.props;
     return (
@@ -88,4 +88,4 @@ class Components extends React.Component {
   }
 }
 
-export default withStyles(componentsStyle)(Components);
+export default withStyles(componentsStyle)(HomePage);

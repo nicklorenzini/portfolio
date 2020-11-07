@@ -21,6 +21,7 @@ import GridContainer from "components/Grid/GridContainer.jsx";
 import GridItem from "components/Grid/GridItem.jsx";
 import Button from "components/CustomButtons/Button.jsx";
 import javascriptStyles from "assets/jss/material-kit-react/views/componentsSections/javascriptStyles.jsx";
+import ContactForm from './SectionContact';
 
 function Transition(props) {
   return <Slide direction="down" {...props} />;
@@ -116,20 +117,7 @@ class SectionJavascript extends React.Component {
                       id="classic-modal-slide-description"
                       className={classes.modalBody}
                     >
-                      <p>
-                        Far far away, behind the word mountains, far from the
-                        countries Vokalia and Consonantia, there live the blind
-                        texts. Separated they live in Bookmarksgrove right at
-                        the coast of the Semantics, a large language ocean. A
-                        small river named Duden flows by their place and
-                        supplies it with the necessary regelialia. It is a
-                        paradisematic country, in which roasted parts of
-                        sentences fly into your mouth. Even the all-powerful
-                        Pointing has no control about the blind texts it is an
-                        almost unorthographic life One day however a small line
-                        of blind text by the name of Lorem Ipsum decided to
-                        leave for the far World of Grammar.
-                      </p>
+<ContactForm />
                     </DialogContent>
                     <DialogActions className={classes.modalFooter}>
                       <Button color="transparent" simple>
