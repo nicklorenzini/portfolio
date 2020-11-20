@@ -17,8 +17,6 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Snackbar from '@material-ui/core/Snackbar';
 import MuiAlert from '@material-ui/lab/Alert';
 
-import {top100Films} from './data';
-
 interface Values {
   email: string;
   name: string;
