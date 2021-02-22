@@ -1,9 +1,8 @@
 import React from "react";
 // nodejs library that concatenates classes
-import classNames from "classnames";
 // @material-ui/core components
 import withStyles from "@material-ui/core/styles/withStyles";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 import Header from "components/Header/Header.jsx";
 import Footer from "components/Footer/Footer.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
@@ -56,7 +55,7 @@ const SitePosts = (props) => {
                 <GridItem xs={12} sm={12} md={6}>
                 <h1>{props.data.contentfulSitePost.heading}</h1>
                 <h2>{props.data.contentfulSitePost.subheading}</h2>
-                <img src={props.data.contentfulSitePost.image.file.url} />
+                <img src={props.data.contentfulSitePost.image.file.url} alt='blogpost' />
                 <h3>{ documentToReactComponents(props.data.contentfulSitePost.description.json) }</h3>
 </GridItem>
               </GridContainer>
